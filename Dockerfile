@@ -10,7 +10,7 @@ FROM ubuntu
 MAINTAINER Oliver Van Dyk
 
 # Install basic applications, Python, Python tools 
-RUN apt-get update && apt-get install -y \    
+RUN apt-get update && apt-get install -y \ 
 build-essential \    
 curl \    
 dialog \    
@@ -22,7 +22,9 @@ python-setuptools \
 python-distribute \    
 python3-pip \    
 tar \    
-wget 
+wget
+RUN apt-get python3-numpy \ 
+python3-scipy
  
 # Get pip3 to download and install Python requirements: 
 RUN pip3 install flask 
