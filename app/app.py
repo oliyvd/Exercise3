@@ -29,6 +29,7 @@ def count_words():
             colour = "0" + colour
         htmlSpan = htmlSpan + '<span style="font-size: 16px; color: #017e22">' + word + '</span>'
     html = '<html><head><body><h1>'+html+'</h1></body></head></html>'
+    return html
     
     
 
